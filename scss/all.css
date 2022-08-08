@@ -1,7 +1,3 @@
-/* [http://meyerweb.com/eric/tools/css/reset/](http://meyerweb.com/eric/tools/css/reset/)
-v2.0 | 20110126
-License: none (public domain)
-*/
 html,
 body,
 div,
@@ -159,6 +155,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   line-height: 1.2;
+  font-size: 16px;
   font-family: 'Noto Sans SC', Helvetica, arial, sans-serif;
   letter-spacing: 0.05rem;
   font-weight: 400;
@@ -245,10 +242,6 @@ nav {
           transform: translate(-50%, -50%);
 }
 
-.display-none {
-  display: none;
-}
-
 .img-hvr {
   overflow: hidden;
 }
@@ -256,165 +249,7 @@ nav {
 .transEz-in-out {
   -webkit-transition: 2s;
   transition: 2s;
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
-}
-
-@media (max-width: 1180px) {
-  html .title {
-    font-size: 7rem;
-  }
-  html .headerList {
-    width: 70%;
-  }
-  html .workList h4 {
-    font-size: 1rem;
-  }
-  html .workList p {
-    font-size: 0.5rem;
-  }
-  html .selfItem {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  html .selfItem img {
-    width: 80%;
-  }
-  html .selfItem div {
-    width: 100%;
-  }
-  html .selfIntro {
-    margin-bottom: 0;
-    width: 100%;
-  }
-}
-
-@media (max-width: 1030px) {
-  html .title {
-    font-size: 6rem;
-  }
-  nav .menu {
-    display: none;
-  }
-  nav .bugerMenu {
-    display: block;
-  }
-}
-
-@media (max-width: 888px) {
-  html .title {
-    font-size: 5rem;
-  }
-  html .headerList {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  html .headerList h4,
-  html .headerList a {
-    margin-bottom: 1vh;
-  }
-  html .headerList div {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  html {
-    font-size: 14px;
-  }
-  html .banner {
-    margin-top: 10%;
-  }
-  html .banner h2 {
-    width: 90%;
-  }
-  html .workList {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  html .workList h4 {
-    font-size: 1.5rem;
-  }
-  html .workList p {
-    font-size: 1rem;
-  }
-  html .workBox50 {
-    width: 100%;
-    margin-bottom: 1vh;
-    padding: 5%;
-  }
-  html .aboutMe {
-    padding-left: 2%;
-    padding-right: 2%;
-  }
-  html .aboutMe span {
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-  }
-  html .selfIntro {
-    width: 100%;
-    margin: 0;
-    margin-bottom: 10vh;
-  }
-  html .selfItem div {
-    width: 100%;
-  }
-  html .selfList {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  html .selfList a {
-    margin-top: 10vh;
-  }
-}
-
-@media (max-width: 568px) {
-  html {
-    font-size: 12px;
-  }
-  html .header {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  html .banner {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    padding: none;
-  }
-  html .headerList {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  html .headerList li,
-  html .headerList div {
-    width: 100%;
-    margin-top: 5vh;
-  }
-  html .headerList div {
-    display: block;
-    border: none;
-    background-color: #d9d9d9;
-    border-radius: 10px;
-    width: 100%;
-    height: 0.15vh;
-  }
+  transition-timing-function: ease-in-out;
 }
 
 .banner {
@@ -426,7 +261,8 @@ nav {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
-  padding: 10%;
+  padding-left: 10%;
+  padding-bottom: 10%;
 }
 
 .header {
@@ -436,10 +272,12 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
-  position: relative;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .headerList {
@@ -453,7 +291,7 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 10vh;
-  width: 50%;
+  width: 482px;
 }
 
 .headerList div {
@@ -461,7 +299,7 @@ nav {
   height: 25px;
 }
 
-.headerList h4 {
+.headerList a {
   cursor: pointer;
 }
 
@@ -500,10 +338,6 @@ nav {
   width: 272px;
 }
 
-.bugerMenu {
-  display: none;
-}
-
 .myWork {
   width: 100%;
   padding: 10%;
@@ -514,6 +348,7 @@ nav {
 }
 
 .workList {
+  height: 60vh;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -525,25 +360,22 @@ nav {
   opacity: 0;
 }
 
-.workBox50 {
+.work1 {
   background-color: #f5f5f5;
   display: block;
   padding: 3%;
   width: 49.5%;
+  height: 60vh;
   position: relative;
 }
 
-.workBox50:hover .workName {
+.work1:hover img {
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+
+.work1:hover .workName {
   opacity: 1;
-}
-
-.workBox50:hover .workimg {
-  -webkit-transform: rotate(15deg) translate(10%);
-          transform: rotate(15deg) translate(10%);
-}
-
-.workimg {
-  width: 80%;
 }
 
 .tags {
@@ -551,13 +383,7 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 50%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin-top: 2%;
-}
-
-.tags p {
-  margin-bottom: 0.5vh;
 }
 
 .aboutMe {
@@ -585,13 +411,9 @@ nav {
   -webkit-text-stroke: 0.85px #7c7c7c;
 }
 
-.aboutMe h2 {
-  margin-bottom: 2vh;
-}
-
 .selfIntro {
   margin-bottom: 30vh;
-  width: 90%;
+  width: 70%;
 }
 
 .selfItem {
@@ -601,7 +423,11 @@ nav {
 }
 
 .selfItem img {
-  width: 40%;
+  width: 49%;
+}
+
+.selfItem div {
+  width: 49%;
 }
 
 .selfItem p {
@@ -620,12 +446,8 @@ nav {
   width: fit-content;
 }
 
-.selfList {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 52%;
+.selfItem h2 {
+  margin-bottom: 2vh;
 }
 
 .footer {

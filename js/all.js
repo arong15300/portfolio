@@ -5,9 +5,3 @@ function fnToWork() {
   });
 }
 
-function fnToAbout(){
-  window.scrollTo({
-    top:2100,behavior: "smooth"
-  });
-}
-
