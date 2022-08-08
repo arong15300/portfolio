@@ -156,7 +156,6 @@ body {
     align-items: center;
     // font
     line-height: 1.2;
-    font-size: 16px;
     font-family: 'Noto Sans SC', Helvetica, arial, sans-serif;
     letter-spacing: 0.05rem;
     font-weight: 400;
@@ -240,7 +239,11 @@ nav {
 .center {
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+}
+
+.display-none {
+    display: none;
 }
 
 
@@ -251,5 +254,205 @@ nav {
 // animation
 .transEz-in-out {
     transition: 2s;
-    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+
+//RWD
+@media(max-width:1180px) {
+
+    html {
+        .title {
+            font-size: 7rem;
+        }
+
+        //this is header---------
+        .headerList {
+            width: 70%;
+        }
+
+        //this is myWork---------
+
+        .workList {
+            h4 {
+                font-size: 1rem;
+            }
+
+            p {
+                font-size: 0.5rem;
+            }
+        }
+        //this is aboutMe
+        .selfItem{
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 80%;
+            }
+            div{
+                width: 100%;
+            }
+        }
+        .selfIntro{
+            margin-bottom: 0;
+            width: 100%;
+        }
+    }
+}
+
+
+@media(max-width:1030px) {
+
+    html {
+        .title {
+            font-size: 6rem;
+        }
+    }
+
+    //this is header---------
+    nav {
+        .menu {
+            display: none;
+        }
+
+        .bugerMenu {
+            display: block;
+        }
+    }
+
+    //this is header---------
+}
+
+@media(max-width:888px) {
+    html {
+        .title {
+            font-size: 5rem;
+        }
+
+        //this is header---------
+        .headerList {
+            flex-direction: column;
+            align-items: flex-start;
+
+            h4,
+            a {
+                margin-bottom: 1vh;
+            }
+
+            div {
+                display: none;
+            }
+        }
+
+        //this is myWork---------
+
+    }
+
+}
+
+
+@media(max-width:768px) {
+    html {
+        font-size: 14px;
+
+        //this is header---------
+        .banner {
+            margin-top: 10%;
+
+            h2 {
+                width: 90%;
+            }
+        }
+
+        //this is myWrok---------
+        .workList {
+            flex-direction: column;
+
+            h4 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        .workBox50 {
+            width: 100%;
+            margin-bottom: 1vh;
+            padding: 5%;
+        }
+
+        // this is about me
+
+        .aboutMe {
+            padding-left: 2%;
+            padding-right: 2%;
+
+            span {
+                margin-top: 10vh;
+                margin-bottom: 10vh;
+            }
+        }
+
+        .selfIntro {
+            width: 100%;
+            margin: 0;
+            margin-bottom: 10vh;
+        }
+
+        .selfItem {
+   
+
+            div {
+                width: 100%;
+            }
+        }
+        .selfList{
+            align-items: center;
+            a{
+                margin-top: 10vh;
+            }
+        }
+    }
+
+}
+
+@media(max-width:568px) {
+    html {
+        font-size: 12px;
+
+        //this is header---------
+        .header {
+            justify-content: center;
+        }
+
+        .banner {
+            align-items: center;
+            text-align: center;
+            padding: none;
+        }
+
+        .headerList {
+            align-items: center;
+
+            li,
+            div {
+                width: 100%;
+                margin-top: 5vh;
+            }
+
+            div {
+                display: block;
+                border: none;
+                background-color: $lightGray;
+                border-radius: 10px;
+                width: 100%;
+                height: 0.15vh;
+            }
+        }
+
+        //this is header---------
+    }
+
 }
