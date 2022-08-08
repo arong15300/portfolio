@@ -2,16 +2,15 @@
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
-    padding-left: 10%;
-    padding-bottom: 10%;
+    padding: 10%;
 }
 
 .header {
     width: 100%;
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: column-reverse;
+    position: relative;
 }
 
 .headerList {
@@ -19,14 +18,14 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 10vh;
-    width: 482px;
+    width: 50%;
 
     div {
         border-right: 2px solid $lightGray;
         height: 25px;
     }
 
-    a {
+    h4 {
         cursor: pointer;
     }
 }
@@ -54,6 +53,10 @@ nav {
     width: 272px;
 }
 
+.bugerMenu {
+    display: none;
+}
+
 
 
 //this is my work
@@ -65,76 +68,93 @@ nav {
 }
 
 .workList {
-    height: 60vh;
     justify-content: space-between;
     margin-bottom: 1%;
 }
 
-.workName{
+.workName {
     z-index: 99;
     opacity: 0;
 }
 
 
 
-.work1 {
+.workBox50 {
     background-color: $darkWhite;
     display: block;
     padding: 3%;
     width: 49.5%;
-    height: 60vh;
     position: relative;
 }
 
-.work1:hover {
-    img{
-        transform: rotate(15deg);
-    }
-    .workName{
+.workBox50:hover {
+    .workName {
         opacity: 1;
-    }   
+    }
+
+    .workimg {
+        transform: rotate(15deg) translate(10%);
+    }
 }
 
-.tags{
+.workimg {
+    width: 80%;
+}
+
+.tags {
     justify-content: space-between;
     width: 50%;
+    flex-wrap: wrap;
     margin-top: 2%;
+
+    p {
+        margin-bottom: 0.5vh;
+    }
 }
 
-.aboutMe{
+//this is about me
+
+.aboutMe {
     width: 95%;
     flex-direction: column;
     align-items: center;
     background-color: $darkWhite;
     padding: 10%;
-    h1{
+
+    h1 {
         margin-bottom: 2%;
     }
-    span{
+
+    span {
         margin-bottom: 20vh;
     }
-    .title{
+
+    .title {
         -webkit-text-stroke: 0.85px $gray;
     }
+
+    h2 {
+        margin-bottom: 2vh;
+    }
 }
 
-.selfIntro{
+.selfIntro {
     margin-bottom: 30vh;
-    width: 70%;
+    width: 90%;
 }
 
-.selfItem{
+.selfItem {
     justify-content: space-between;
-    img{
-        width: 49%;
+
+    img {
+        width: 40%;
     }
-    div{
-        width: 49%;
-    }
-    p{
+
+    p {
         margin-bottom: 10vh;
     }
-    a{
+
+    a {
         display: block;
         border: 1px solid $txtBlack;
         padding-left: 4%;
@@ -143,14 +163,16 @@ nav {
         padding-bottom: 1.5vh;
         width: fit-content;
     }
-    h2{
-        margin-bottom: 2vh;
-    }
+}
+
+.selfList {
+    flex-direction: column;
+    width: 52%;
 }
 
 // this is footer
 
-.footer{
+.footer {
     flex-direction: column;
     justify-content: center;
     padding: 6%;
@@ -158,12 +180,14 @@ nav {
     width: 95%;
     height: 40vh;
     margin-top: 20vh;
-    div{
+
+    div {
         flex-direction: column;
         text-align: center;
         margin-bottom: 5vh;
     }
-    a{
+
+    a {
         text-align: center;
     }
 }
