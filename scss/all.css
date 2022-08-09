@@ -283,7 +283,7 @@ nav {
             align-items: center;
   }
   html .selfItem img {
-    width: 80%;
+    max-width: 80%;
   }
   html .selfItem div {
     width: 100%;
@@ -356,8 +356,8 @@ nav {
     padding: 5%;
   }
   html .aboutMe {
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
   }
   html .aboutMe span {
     margin-top: 10vh;
@@ -366,7 +366,6 @@ nav {
   html .selfIntro {
     width: 100%;
     margin: 0;
-    margin-bottom: 10vh;
   }
   html .selfItem div {
     width: 100%;
@@ -601,7 +600,7 @@ nav {
 }
 
 .selfItem img {
-  width: 40%;
+  max-width: 40%;
 }
 
 .selfItem p {

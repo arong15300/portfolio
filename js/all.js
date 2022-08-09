@@ -7,7 +7,7 @@ function fnToWork() {
 
 function fnToAbout(){
   window.scrollTo({
-    top:2100,behavior: "smooth"
+    top:1900,behavior: "smooth"
   });
 }
 
