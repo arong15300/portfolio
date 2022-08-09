@@ -271,29 +271,21 @@ nav {
             width: 70%;
         }
 
-        //this is myWork---------
-
-        .workList {
-            h4 {
-                font-size: 1rem;
-            }
-
-            p {
-                font-size: 0.5rem;
-            }
-        }
         //this is aboutMe
-        .selfItem{
+        .selfItem {
             flex-direction: column;
             align-items: center;
-            img{
+
+            img {
                 max-width: 80%;
             }
-            div{
+
+            div {
                 width: 100%;
             }
         }
-        .selfIntro{
+
+        .selfIntro {
             margin-bottom: 0;
             width: 100%;
         }
@@ -310,148 +302,124 @@ nav {
     }
 
     //this is header---------
-    nav {
-        .menu {
-            display: none;
-        }
-
-        .bugerMenu {
-            display: block;
-        }
-    }
-
-    //this is header---------
-}
-
-@media(max-width:888px) {
-    html {
-        .title {
-            font-size: 5rem;
-        }
-
-        //this is header---------
-        .headerList {
-            flex-direction: column;
-            align-items: flex-start;
-
-            h4,
-            a {
-                margin-bottom: 1vh;
-            }
-
-            div {
-                display: none;
-            }
-        }
-
-        //this is myWork---------
-
-    }
 
 }
 
 
-@media(max-width:768px) {
-    html {
-        font-size: 14px;
-
-        //this is header---------
-        .banner {
-            margin-top: 10%;
-
-            h2 {
-                width: 90%;
-            }
-        }
-
-        //this is myWrok---------
-        .workList {
-            flex-direction: column;
-
-            h4 {
-                font-size: 1.5rem;
+    @media(max-width:888px) {
+        html {
+            .title {
+                font-size: 5rem;
             }
 
-            p {
-                font-size: 1rem;
+            //this is header---------
+            .headerList {
+                flex-direction: column;
+                align-items: flex-start;
+
+                h4,
+                a {
+                    margin-bottom: 1vh;
+                }
+
+                div {
+                    display: none;
+                }
             }
-        }
 
-        .workBox50 {
-            width: 100%;
-            margin-bottom: 1vh;
-            padding: 5%;
-        }
-
-        // this is about me
-
-        .aboutMe {
-            padding-left: 4%;
-            padding-right: 4%;
-
-            span {
-                margin-top: 10vh;
-                margin-bottom: 10vh;
-            }
-        }
-
-        .selfIntro {
-            width: 100%;
-            margin: 0;
-        }
-
-        .selfItem {
-   
-
-            div {
+            //this is myWork---------
+            .card{
                 width: 100%;
             }
         }
-        .selfList{
-            align-items: center;
-            a{
-                margin-top: 10vh;
-            }
-        }
+
     }
 
-}
 
-@media(max-width:568px) {
-    html {
-        font-size: 12px;
+    @media(max-width:768px) {
+        html {
+            font-size: 14px;
 
-        //this is header---------
-        .header {
-            justify-content: center;
-        }
+            //this is header---------
+            .banner {
+                margin-top: 10%;
 
-        .banner {
-            align-items: center;
-            text-align: center;
-            padding: none;
-        }
-
-        .headerList {
-            align-items: center;
-
-            li,
-            div {
-                width: 100%;
-                margin-top: 5vh;
+                h2 {
+                    width: 90%;
+                }
             }
 
-            div {
-                display: block;
-                border: none;
-                background-color: $lightGray;
-                border-radius: 10px;
+            // this is about me
+
+            .aboutMe {
+                padding-left: 4%;
+                padding-right: 4%;
+
+                span {
+                    margin-top: 10vh;
+                    margin-bottom: 10vh;
+                }
+            }
+
+            .selfIntro {
                 width: 100%;
-                height: 0.15vh;
+                margin: 0;
+            }
+
+            .selfItem {
+
+
+                div {
+                    width: 100%;
+                }
+            }
+
+            .selfList {
+                align-items: center;
+
+                a {
+                    margin-top: 10vh;
+                }
             }
         }
 
-        //this is header---------
     }
 
-}
+    @media(max-width:568px) {
+        html {
+            font-size: 12px;
+
+            //this is header---------
+            .header {
+                justify-content: center;
+            }
+
+            .banner {
+                align-items: center;
+                text-align: center;
+                padding: none;
+            }
+
+            .headerList {
+                align-items: center;
+
+                li,
+                div {
+                    width: 100%;
+                    margin-top: 5vh;
+                }
+
+                div {
+                    display: block;
+                    border: none;
+                    background-color: $lightGray;
+                    border-radius: 10px;
+                    width: 100%;
+                    height: 0.15vh;
+                }
+            }
+
+            //this is header---------
+        }
+
+    }
