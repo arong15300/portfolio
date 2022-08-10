@@ -5,9 +5,22 @@ function fnToWork() {
   });
 }
 
-function fnToAbout(){
+function fnToAbout() {
   window.scrollTo({
-    top:1900,behavior: "smooth"
+    top: 2200, behavior: "smooth"
   });
 }
 
+function fnGoTop() {
+  window.scrollTo({
+    top: 0, behavior: "smooth"
+  });
+}
+
+$(window).scroll(function () {
+  if ($(window).scrollTop() >= $(window).height()) {
+    document.getElementById('goTop').style.opacity = '1';
+  } else {
+    document.getElementById('goTop').style.opacity = '0';
+  }
+})

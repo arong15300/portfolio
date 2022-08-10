@@ -253,7 +253,7 @@ nav {
 
 // animation
 .transEz-in-out {
-    transition: 2s;
+    transition: 0.5s;
     transition-timing-function: ease-in-out;
 }
 
@@ -271,9 +271,15 @@ nav {
             width: 70%;
         }
 
+        //this is myWork
+        .card {
+            width: 49.5%;
+        }
+
         //this is aboutMe
-        .selfItem {
-            flex-direction: column;
+
+        .selfIntro {
+            flex-direction: column-reverse;
             align-items: center;
 
             img {
@@ -284,11 +290,7 @@ nav {
                 width: 100%;
             }
         }
-
-        .selfIntro {
-            margin-bottom: 0;
-            width: 100%;
-        }
+        
     }
 }
 
@@ -299,127 +301,107 @@ nav {
         .title {
             font-size: 6rem;
         }
-    }
 
-    //this is header---------
+        //this is myWork---------
+    }
+}
+
+
+@media(max-width:888px) {
+    html {
+        .title {
+            font-size: 5rem;
+        }
+
+        //this is header---------
+        .headerList {
+            flex-direction: column;
+            align-items: flex-start;
+
+            h4,
+            a {
+                margin-bottom: 1vh;
+            }
+
+            div {
+                display: none;
+            }
+        }
+
+        //this is myWork---------
+
+    }
 
 }
 
 
-    @media(max-width:888px) {
-        html {
-            .title {
-                font-size: 5rem;
+@media(max-width:768px) {
+    html {
+        font-size: 14px;
+
+        //this is header---------
+        .banner {
+            margin-top: 10%;
+
+            h2 {
+                width: 90%;
             }
+        }
+        //this is myWork---------
+        .card {
+            width: 100%;
+        }
 
-            //this is header---------
-            .headerList {
-                flex-direction: column;
-                align-items: flex-start;
+        // this is about me
 
-                h4,
-                a {
-                    margin-bottom: 1vh;
-                }
-
-                div {
-                    display: none;
-                }
+        .aboutMe {
+            span {
+                margin-top: 5vh;
+                margin-bottom: 10vh;
             }
+        }
+    }
 
-            //this is myWork---------
-            .card{
-                width: 100%;
+}
+
+@media(max-width:568px) {
+    html {
+        br { display: none; }
+        //this is header---------
+        .header {
+            justify-content: center;
+        }
+
+        .banner {
+            align-items: center;
+            padding: none;
+            text-align: center;
+            span{
+                margin-bottom: 5vh;
             }
         }
 
-    }
+        .headerList {
+            align-items: center;
 
-
-    @media(max-width:768px) {
-        html {
-            font-size: 14px;
-
-            //this is header---------
-            .banner {
-                margin-top: 10%;
-
-                h2 {
-                    width: 90%;
-                }
-            }
-
-            // this is about me
-
-            .aboutMe {
-                padding-left: 4%;
-                padding-right: 4%;
-
-                span {
-                    margin-top: 10vh;
-                    margin-bottom: 10vh;
-                }
-            }
-
-            .selfIntro {
+            li,
+            div {
                 width: 100%;
-                margin: 0;
-            }
-
-            .selfItem {
-
-
-                div {
-                    width: 100%;
-                }
-            }
-
-            .selfList {
-                align-items: center;
-
-                a {
-                    margin-top: 10vh;
-                }
-            }
-        }
-
-    }
-
-    @media(max-width:568px) {
-        html {
-            font-size: 12px;
-
-            //this is header---------
-            .header {
-                justify-content: center;
-            }
-
-            .banner {
-                align-items: center;
+                margin-top: 5vh;
                 text-align: center;
-                padding: none;
             }
 
-            .headerList {
-                align-items: center;
-
-                li,
-                div {
-                    width: 100%;
-                    margin-top: 5vh;
-                }
-
-                div {
-                    display: block;
-                    border: none;
-                    background-color: $lightGray;
-                    border-radius: 10px;
-                    width: 100%;
-                    height: 0.15vh;
-                }
+            div {
+                display: block;
+                border: none;
+                background-color: $lightGray;
+                border-radius: 10px;
+                width: 100%;
+                height: 0.15vh;
             }
-
-            //this is header---------
         }
 
+        //this is header---------
     }
+
+}
