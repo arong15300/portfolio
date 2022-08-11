@@ -107,7 +107,7 @@ section {
     display: block;
 }
 
-body {
+html {
     line-height: 1;
 }
 
@@ -177,7 +177,7 @@ span {
 
 a:hover {
     text-decoration: none;
-    color: $txtBlack;
+    color: $mainColor;
 }
 
 h1 {
@@ -328,8 +328,17 @@ nav {
             }
         }
 
-        //this is myWork---------
-
+        //this is aboutMe---------
+        .ins-aboutMe{
+            div{
+                width: 49.5%;
+                height: 25vw;
+                margin-bottom: 1%;
+            }
+            img{
+                width: 100%;
+            }
+        }
     }
 
 }
@@ -350,6 +359,7 @@ nav {
         //this is myWork---------
         .card {
             width: 100%;
+            margin-bottom: 2%;
         }
 
         // this is about me
@@ -360,6 +370,20 @@ nav {
                 margin-bottom: 10vh;
             }
         }
+        .selfIntro{
+            img{
+                content: url('../img/view.jpeg');   
+                margin-top: 4vh;
+                margin-bottom: 4vh;
+            }
+        }
+        .selfItem{
+            img{
+                display: block;
+                content: url('../img/me.jpeg');
+            }
+        }
+
     }
 
 }

@@ -106,7 +106,7 @@ section {
   display: block;
 }
 
-body {
+html {
   line-height: 1;
 }
 
@@ -178,7 +178,7 @@ span {
 
 a:hover {
   text-decoration: none;
-  color: #3d3d3d;
+  color: cornflowerblue;
 }
 
 h1 {
@@ -206,7 +206,7 @@ p {
 .txtTags {
   font-size: 0.85rem;
   line-height: 1;
-  color: #007A78;
+  color: cornflowerblue;
 }
 
 nav {
@@ -313,6 +313,14 @@ nav {
   html .headerList div {
     display: none;
   }
+  html .ins-aboutMe div {
+    width: 49.5%;
+    height: 25vw;
+    margin-bottom: 1%;
+  }
+  html .ins-aboutMe img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -327,10 +335,20 @@ nav {
   }
   html .card {
     width: 100%;
+    margin-bottom: 2%;
   }
   html .aboutMe span {
     margin-top: 5vh;
     margin-bottom: 10vh;
+  }
+  html .selfIntro img {
+    content: url("../img/view.jpeg");
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+  }
+  html .selfItem img {
+    display: block;
+    content: url("../img/me.jpeg");
   }
 }
 
@@ -375,14 +393,15 @@ nav {
 }
 
 #goMail {
-  bottom: 0;
+  bottom: 0vh;
   right: 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  font-size: 0.85rem;
   position: relative;
+  font-weight: bold;
+  z-index: 99;
+}
+
+#goMail p {
+  font-size: 0.85rem;
 }
 
 #goMail img {
@@ -391,25 +410,31 @@ nav {
   top: -6vh;
 }
 
-#goMail:hover {
-  font-weight: bold;
+.move {
+  -webkit-transform: translateY(-8vh) scale(0.9);
+          transform: translateY(-8vh) scale(0.9);
 }
 
 #goMail:hover .mailOpen {
+  display: block;
   opacity: 1;
 }
 
 #goMail:hover .mailClose {
+  display: none;
   opacity: 0;
 }
 
 .mailOpen {
+  display: none;
   opacity: 0;
 }
 
 #goTop {
-  bottom: 10vh;
+  bottom: 0;
   right: 0;
+  opacity: 0;
+  z-index: 98;
 }
 
 #goTop :hover {
@@ -455,7 +480,6 @@ nav {
 #goMail {
   position: fixed;
   width: 50px;
-  z-index: 99;
   margin: 2%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -634,6 +658,56 @@ nav {
   margin-top: 10vh;
 }
 
+.aboutMe a:hover {
+  background-color: cornflowerblue;
+  border: cornflowerblue;
+  color: white;
+  -webkit-animation-name: moreAbout;
+          animation-name: moreAbout;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes moreAbout {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+  }
+  60% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes moreAbout {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+  }
+  60% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
 .selfIntro {
   width: 100%;
   padding-left: 5%;
@@ -650,6 +724,23 @@ nav {
 .selfItem {
   position: relative;
   width: 60%;
+}
+
+.selfItem img {
+  display: none;
+}
+
+.selfItem p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .selfList {
@@ -696,5 +787,130 @@ nav {
 
 .footer a:hover {
   font-weight: bold;
+}
+
+.header-aboutMe {
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60%;
+}
+
+.banner-aboutMe {
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner-aboutMe span {
+  margin-bottom: 10vh;
+}
+
+.ins-aboutMe {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.ins-aboutMe div {
+  width: 24%;
+  height: 14.4vw;
+  border-radius: 4%;
+  overflow: hidden;
+  position: relative;
+  -webkit-animation-name: pic-About;
+          animation-name: pic-About;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pic-About {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  10% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  50% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  60% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+
+@keyframes pic-About {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  10% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  50% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  60% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+
+.section1-aboutMe {
+  width: 60%;
+}
+
+.moreAbout {
+  width: 60%;
+  margin-top: 10vh;
+}
+
+.moreAbout div {
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 1.5px;
+  height: inherit;
+  background-color: cornflowerblue;
+}
+
+.moreAbout a {
+  color: cornflowerblue;
+}
+
+.moreAbout a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 /*# sourceMappingURL=all.css.map */

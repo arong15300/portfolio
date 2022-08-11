@@ -20,7 +20,9 @@ function fnGoTop() {
 $(window).scroll(function () {
   if ($(window).scrollTop() >= $(window).height()) {
     document.getElementById('goTop').style.opacity = '1';
+    document.getElementById('goMail').classList.add('move');
   } else {
     document.getElementById('goTop').style.opacity = '0';
+    document.getElementById('goMail').classList.remove('move');
   }
 })
