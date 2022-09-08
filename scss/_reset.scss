@@ -42,7 +42,6 @@ sub,
 sup,
 tt,
 var,
-b,
 u,
 i,
 center,
@@ -171,7 +170,8 @@ h5,
 h6,
 p,
 a,
-span {
+span,
+li {
     color: $txtBlack;
 }
 
@@ -179,6 +179,8 @@ a:hover {
     text-decoration: none;
     color: $mainColor;
 }
+
+
 
 h1 {
     font-size: 3rem;
@@ -202,10 +204,14 @@ p {
     line-height: 1.5;
 }
 
+li{
+    line-height: 1.5;
+    color: $txtBlack;
+}
+
 .txtTags {
     font-size: 0.85rem;
-    line-height: 1;
-    color: $mainColor;
+    line-height: 1.5;
 }
 
 nav {
@@ -223,8 +229,24 @@ nav {
     font-weight: bold;
 }
 
+.txt-i{
+    font-style: italic;
+}
+
 .txtLightGray {
     color: $lightGray;
+}
+
+.txtGray{
+    color: $gray;
+}
+
+.txtMainColor{
+    color: $mainColor;
+}
+
+.border-lightGray{
+    border: 1px solid $lightGray;
 }
 
 // layout
@@ -242,6 +264,12 @@ nav {
     transform: translate(-50%, -50%);
 }
 
+.flex-direction-column{
+    display: flex;
+    flex-direction: column;
+}
+
+
 .display-none {
     display: none;
 }
@@ -258,174 +286,3 @@ nav {
 }
 
 
-//RWD
-@media(max-width:1180px) {
-
-    html {
-        .title {
-            font-size: 7rem;
-        }
-
-        //this is header---------
-        .headerList {
-            width: 70%;
-        }
-
-        //this is myWork
-        .card {
-            width: 49.5%;
-        }
-
-        //this is aboutMe
-
-        .selfIntro {
-            flex-direction: column-reverse;
-            align-items: center;
-
-            img {
-                max-width: 80%;
-            }
-
-            div {
-                width: 100%;
-            }
-        }
-        
-    }
-}
-
-
-@media(max-width:1030px) {
-
-    html {
-        .title {
-            font-size: 6rem;
-        }
-
-        //this is myWork---------
-    }
-}
-
-
-@media(max-width:888px) {
-    html {
-        .title {
-            font-size: 5rem;
-        }
-
-        //this is header---------
-        .headerList {
-            flex-direction: column;
-            align-items: flex-start;
-
-            h4,
-            a {
-                margin-bottom: 1vh;
-            }
-
-            div {
-                display: none;
-            }
-        }
-
-        //this is aboutMe---------
-        .ins-aboutMe{
-            div{
-                width: 49.5%;
-                height: 25vw;
-                margin-bottom: 1%;
-            }
-            img{
-                width: 100%;
-            }
-        }
-    }
-
-}
-
-
-@media(max-width:768px) {
-    html {
-        font-size: 14px;
-
-        //this is header---------
-        .banner {
-            margin-top: 10%;
-
-            h2 {
-                width: 90%;
-            }
-        }
-        //this is myWork---------
-        .card {
-            width: 100%;
-            margin-bottom: 2%;
-        }
-
-        // this is about me
-
-        .aboutMe {
-            span {
-                margin-top: 5vh;
-                margin-bottom: 10vh;
-            }
-        }
-        .selfIntro{
-            img{
-                content: url('../img/view.jpeg');   
-                margin-top: 4vh;
-                margin-bottom: 4vh;
-            }
-        }
-        .selfItem{
-            img{
-                display: block;
-                content: url('../img/me.jpeg');
-            }
-        }
-
-    }
-
-}
-
-@media(max-width:568px) {
-    html {
-        br { display: none; }
-        //this is header---------
-        .header {
-            justify-content: center;
-        }
-
-        .banner {
-            align-items: center;
-            padding: none;
-            text-align: center;
-            span{
-                margin-bottom: 5vh;
-            }
-        }
-
-        .headerList {
-            align-items: center;
-
-            li,
-            div {
-                width: 100%;
-                margin-top: 5vh;
-                text-align: center;
-            }
-
-            div {
-                display: block;
-                border: none;
-                background-color: $lightGray;
-                border-radius: 10px;
-                width: 100%;
-                height: 0.15vh;
-            }
-        }
-
-        //this is header---------
-    }
-
-}

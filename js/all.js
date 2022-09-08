@@ -1,13 +1,13 @@
 function fnToWork() {
   window.scrollTo({
-    top: 630,
+    top: 700,
     behavior: "smooth"
   });
 }
 
 function fnToAbout() {
   window.scrollTo({
-    top: 2200, behavior: "smooth"
+    top: 1850, behavior: "smooth"
   });
 }
 
@@ -16,6 +16,8 @@ function fnGoTop() {
     top: 0, behavior: "smooth"
   });
 }
+
+
 
 $(window).scroll(function () {
   if ($(window).scrollTop() >= $(window).height()) {
@@ -26,3 +28,16 @@ $(window).scroll(function () {
     document.getElementById('goMail').classList.remove('move');
   }
 })
+
+
+//iframe Response design
+function changeFrameHeight(){
+  var ifm= document.getElementById("myiframe"); 
+  ifm.height=document.documentElement.clientHeight-100
+}
+
+window.onresize=function(){  
+   changeFrameHeight();  
+} 
+
+
