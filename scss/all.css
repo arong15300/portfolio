@@ -393,51 +393,64 @@ nav {
 }
 
 .banner {
-  width: 100%;
+  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-left: 10%;
+  padding-right: 10%;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
-  padding: 10%;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 2;
+}
+
+.banner-background {
+  width: 40%;
+  height: 100vh;
+  right: 0;
+  background-image: url("/img/banner-BACKGROUND.png");
+  background-size: 50%;
+  background-repeat: repeat-x;
 }
 
 .header {
   width: 100%;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
   position: relative;
-}
-
-.headerList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 10vh;
-  width: 50%;
 }
 
-.headerList div {
-  border-right: 2px solid #d9d9d9;
-  height: 25px;
-}
-
-.headerList h4 {
+.letGo {
+  width: 220px;
+  height: 56px;
+  background-color: #3d3d3d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50px;
   cursor: pointer;
+  margin-top: 64px;
+}
+
+.letGo p {
+  color: white;
+}
+
+.letGo:hover {
+  background-color: cornflowerblue;
 }
 
 .logo {
@@ -489,9 +502,46 @@ nav {
   margin-bottom: 64px;
 }
 
+.workList:hover .workimg {
+  -webkit-transform: scale(110%);
+          transform: scale(110%);
+}
+
+.workList:hover .workimg-left {
+  -webkit-transform: translateX(-250%);
+          transform: translateX(-250%);
+}
+
+.workList:hover .workimg-right {
+  -webkit-transform: translateX(250%);
+          transform: translateX(250%);
+}
+
 .myWork-box {
   width: 49%;
   margin-right: 2vw;
+  position: relative;
+}
+
+.workimg {
+  max-width: 50%;
+  position: absolute;
+  top: 2%;
+  margin-left: 22%;
+}
+
+.workimg-left {
+  width: 40%;
+  position: absolute;
+  top: 30%;
+  right: -50%;
+}
+
+.workimg-right {
+  width: 40%;
+  position: absolute;
+  top: 10%;
+  left: -50%;
 }
 
 .workContent {
@@ -634,9 +684,6 @@ nav {
   html .title {
     font-size: 7rem;
   }
-  html .headerList {
-    width: 70%;
-  }
   html .selfIntro {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -664,21 +711,8 @@ nav {
   html .title {
     font-size: 5rem;
   }
-  html .headerList {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  html .headerList h4,
-  html .headerList a {
-    margin-bottom: 1vh;
-  }
-  html .headerList div {
-    display: none;
+  html .banner div {
+    width: 150px;
   }
   html .workList {
     -webkit-box-orient: vertical;
@@ -703,12 +737,6 @@ nav {
   html {
     font-size: 14px;
   }
-  html .banner {
-    margin-top: 10%;
-  }
-  html .banner h2 {
-    width: 90%;
-  }
   html .aboutMe span {
     margin-top: 5vh;
     margin-bottom: 10vh;
@@ -728,39 +756,8 @@ nav {
   html br {
     display: none;
   }
-  html .header {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   html .banner {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: none;
-    text-align: center;
-  }
-  html .banner span {
-    margin-bottom: 5vh;
-  }
-  html .headerList {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  html .headerList li,
-  html .headerList div {
     width: 100%;
-    margin-top: 5vh;
-    text-align: center;
-  }
-  html .headerList div {
-    display: block;
-    border: none;
-    background-color: #d9d9d9;
-    border-radius: 10px;
-    width: 100%;
-    height: 0.15vh;
   }
 }
 
@@ -989,7 +986,7 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 20vh;
-  max-width: 744px;
+  max-width: 720px;
 }
 
 .workContainer div {

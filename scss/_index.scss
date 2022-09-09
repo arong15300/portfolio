@@ -79,35 +79,47 @@
 //this is banner, header, navbar
 
 .banner {
-    width: 100%;
+    width: 70%;
     display: flex;
-    flex-direction: column-reverse;
-    padding: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.banner-background{
+    width: 40%;
+    height: 100vh; 
+    right: 0; 
+    background-image: url("/img/banner-BACKGROUND.png");
+    background-size: 50%;
+    background-repeat: repeat-x;
 }
 
 .header {
     width: 100%;
     height: 100vh;
-    display: flex;
-    flex-direction: column-reverse;
     position: relative;
-}
-
-.headerList {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 10vh;
-    width: 50%;
+}
 
-    div {
-        border-right: 2px solid $lightGray;
-        height: 25px;
+.letGo{
+    width: 220px;
+    height: 56px;
+    background-color: $txtBlack;
+    p{
+        color: white;
     }
-
-    h4 {
-        cursor: pointer;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 64px;
+}
+.letGo:hover{
+    background-color: $mainColor;
 }
 
 .logo {
@@ -152,10 +164,41 @@
     align-items: center;
     margin-bottom: 64px;
 }
+.workList:hover{
+    .workimg{
+        transform: scale(110%);
+    }
+    .workimg-left{
+        transform: translateX(-250%);
+    }
+    .workimg-right{
+        transform: translateX(250%);
+    }
+}
 
 .myWork-box {
     width: 49%;
     margin-right: 2vw;
+    position: relative;
+}
+
+.workimg{
+    max-width: 50%;
+    position: absolute;
+    top: 2%;
+    margin-left: 22%;
+}
+.workimg-left{
+    width: 40%;
+    position: absolute;
+    top: 30%;
+    right: -50%;
+}
+.workimg-right{
+    width: 40%;
+    position: absolute;
+    top: 10%;
+    left: -50%;
 }
 
 .workContent {
@@ -282,11 +325,6 @@
             font-size: 7rem;
         }
 
-        //this is header---------
-        .headerList {
-            width: 70%;
-        }
-
         //this is aboutMe
 
         .selfIntro {
@@ -324,19 +362,9 @@
             font-size: 5rem;
         }
 
-        //this is header---------
-        .headerList {
-            flex-direction: column;
-            align-items: flex-start;
-
-            h4,
-            a {
-                margin-bottom: 1vh;
-            }
-
-            div {
-                display: none;
-            }
+        //this is header--------
+        .banner{
+            div{width: 150px;}
         }
 
         //this is myWork---------
@@ -367,14 +395,6 @@
     html {
         font-size: 14px;
 
-        //this is header---------
-        .banner {
-            margin-top: 10%;
-
-            h2 {
-                width: 90%;
-            }
-        }
 
 
         // this is about me
@@ -412,39 +432,10 @@
         }
 
         //this is header---------
-        .header {
-            justify-content: center;
+        .banner{
+            width: 100%;
         }
 
-        .banner {
-            align-items: center;
-            padding: none;
-            text-align: center;
-
-            span {
-                margin-bottom: 5vh;
-            }
-        }
-
-        .headerList {
-            align-items: center;
-
-            li,
-            div {
-                width: 100%;
-                margin-top: 5vh;
-                text-align: center;
-            }
-
-            div {
-                display: block;
-                border: none;
-                background-color: $lightGray;
-                border-radius: 10px;
-                width: 100%;
-                height: 0.15vh;
-            }
-        }
     }
 
 }
