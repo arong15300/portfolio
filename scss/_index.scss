@@ -177,16 +177,18 @@
 }
 
 .myWork-box {
+    background-color: $darkWhite;
     width: 49%;
     margin-right: 2vw;
     position: relative;
+    overflow: hidden;
 }
 
 .workimg{
     max-width: 50%;
     position: absolute;
     top: 2%;
-    margin-left: 22%;
+    left: 22%;
 }
 .workimg-left{
     width: 40%;

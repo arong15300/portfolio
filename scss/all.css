@@ -518,16 +518,18 @@ nav {
 }
 
 .myWork-box {
+  background-color: #f5f5f5;
   width: 49%;
   margin-right: 2vw;
   position: relative;
+  overflow: hidden;
 }
 
 .workimg {
   max-width: 50%;
   position: absolute;
   top: 2%;
-  margin-left: 22%;
+  left: 22%;
 }
 
 .workimg-left {
@@ -940,11 +942,6 @@ nav {
   background-color: #f5f5f5;
   position: relative;
   overflow: hidden;
-}
-
-.workimg {
-  width: 80%;
-  left: 0;
 }
 
 .tags {
