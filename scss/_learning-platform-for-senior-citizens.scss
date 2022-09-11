@@ -72,12 +72,6 @@
     }
 }
 
-.work-video {
-    iframe {
-        border: 1px solid $darkWhite;
-    }
-}
-
 .work-know-more-process {
     cursor: default;
     margin-bottom: 192px !important;
@@ -181,7 +175,6 @@
 
 
 .tip-box {
-    position: relative;
     color: $lightGray;
     cursor: help;
 }
@@ -191,11 +184,13 @@
 
     .float-tip {
         display: block;
-        position: absolute;
-        top: 32px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        text-align: center;
         background-color: $mainColor;
-        padding: 10%;
-        width: 600%;
+        padding: 1%;
+        width: 100%;
 
         span {
             color: white;
@@ -205,7 +200,7 @@
 }
 
 .float-tip {
-    display: none;
+   display: none;
 }
 
 .final-design-gif {
@@ -213,12 +208,7 @@
     align-items: center;
     flex-wrap: wrap;
     background-color: $darkWhite;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    span{
-        width: 70%;
-        justify-content: space-around;
-    }
+    padding:16px;
     img {
         filter: drop-shadow(-8px 8px 7px rgba(0, 0, 0, 0.15))
     }
