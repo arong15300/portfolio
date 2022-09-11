@@ -605,6 +605,7 @@ nav {
   width: 100%;
   padding-left: 5%;
   padding-right: 5%;
+  margin-bottom: 32px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -761,6 +762,47 @@ nav {
   html .banner {
     width: 100%;
   }
+}
+
+.aboutContainer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
+}
+
+.aboutContainer div {
+  margin-bottom: 64px;
+  width: 100%;
+}
+
+.aboutContainer h4,
+.aboutContainer h2 {
+  margin-bottom: 8px;
+}
+
+.aboutContainer ul {
+  list-style: circle;
+  margin-left: 32px;
+  margin-top: 16px;
+}
+
+.aboutContainer ol {
+  list-style: decimal;
+  margin-top: 16px;
+}
+
+.aboutContainer ol li {
+  margin-left: 32px;
+  margin-top: 16px;
+}
+
+.aboutContainer a {
+  text-decoration: underline;
 }
 
 .width-aboutMe {
