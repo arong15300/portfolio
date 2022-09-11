@@ -88,11 +88,10 @@
 }
 
 .banner-background{
-    display: block;
     width: 40%;
     height: 100vh; 
     right: 0; 
-    background-image: url("/img/banner-BACKGROUND.png");
+    background-image: url("../img/banner-BACKGROUND.png");
     background-size: 50%;
     background-repeat: repeat-x;
 }
