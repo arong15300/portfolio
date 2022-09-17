@@ -418,9 +418,11 @@
         }
 
         .selfItem {
-            img {
-                display: block;
-                content: url('../img/me.jpeg');
+            p{
+                img {
+                    display: block;
+                    content: url('../img/me.jpeg');
+                }
             }
         }
 
