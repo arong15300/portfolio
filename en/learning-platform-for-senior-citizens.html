@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JLSPBR1VCG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-JLSPBR1VCG');
+    </script>
+
+    <!--  -->
+    <meta charset="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <!-- Rosario font style -->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Rosario" />
+    <!-- my all css -->
+    <link rel="stylesheet" href="../assets/scss/all.css">
+    <!-- my all JS -->
+    <script type="text/javascript" src="../assets/js/all.js"></script>
+
+
+    <title>Aaron Wong</title>
+</head>
+
+
+
+<body>
+
+    <!-- this is BTNfixed -->
+    <div>
+        <!-- this is contactBTN -->
+        <a href="mailto:arong15300@gmail.com?body=Thanks For Your Reading" id="goMail" class="transEz-in-out">
+            <img class="mailClose" src="../assets/mail close.png" alt="email button">
+            <img class="mailOpen" src="../assets/mail open.png" alt="email button">
+            <p>contact</p>
+        </a>
+
+        <!-- this is BtnGoTop -->
+        <span id="goTop" class="transEz-in-out" onclick="fnGoTop()"><img src="../assets/arrow-up.png"
+                alt="go top button"></span>
+    </div>
+
+
+    <!-- this is navbar -->
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand logo" href="index.html">
+          aaronwong
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                language
+              </a>
+              <div class="dropdown-menu">
+                <button class="dropdown-item" onclick="switchLanguage('zh-TW')">中文</button>
+                <button class="dropdown-item" onclick="switchLanguage('en')">English</button>
+              </div>
+            </li>
+            <li><a class="nav-link" href="work.html">works</a></li>
+            <li><a class="nav-link" href="aboutMe.html">about</a></li>
+            <li><a class="nav-link" href="AaronWong_Resume.pdf" target="_blank">resume</a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+    <!-- this is workContainer -->
+    <div class="workContainer flex">
+
+        <div class="work-header">
+            <h2 class="txtBold">LEARNING PLATFORM FOR SENIOR CITIZENS</h2>
+            <p>Web design UX/UI Research & Design | 2022</p>
+            <iframe width="736" height="418" src="https://www.youtube.com/embed/PjKPkDlbI-c"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen class="border-lightGray"></iframe>
+        </div>
+
+
+
+        <!-- overview -->
+        <div>
+            <h4>Overview</h4>
+            <p>
+                做伙動, learning platform established for <a href="https://www1.cgmh.org.tw/cgv/" target="_blank">Chang
+                    Gung Health Culture Village</a> which won the <a
+                    href="https://www.snq.org.tw/chinese/03_service/02_detail.php?pdid=6067" target="_blank">Symbol of
+                    National Quality mark in 2021</a>. According to information, <a
+                    href="../assets/learning-platform-for-senior-citizens/銀髮族的社會活動參與_衛福部社會與家庭署.pdf" target="_blank">Activity
+                    Participation helps Seniors Stay Healthy</a>. We hope to use this platform to increase activity
+                participation
+                and strong
+                the physical and mental abilities of the senior citizens. And also reduce the burden of health carer,
+                and provide
+                health data tracking. After the proof of time, if it's work, it may be used in the society and
+                provide the national senior citizens learning registration, indirectly make them strong, and reduce the
+                disease pain.
+            </p>
+        </div>
+
+        <!-- role duration teams -->
+        <div class="flex work-role">
+            <span>
+                <p class="txtGray">My role</p>
+                <p class="txtTags">Competitive Analysis, User interview, Research, UI/UX Design (Linebot/Web),
+                    Promotional Video</p>
+            </span>
+            <span>
+                <p class="txtGray">Duration</p>
+                <p class="txtTags">September 2021 to May 2022 (9 months)</p>
+            </span>
+            <span>
+                <p class="txtGray">Teams</p>
+                <p class="txtTags">Designers (1), Design Professor (3), Engineer team (**), Cooperated Field (2)</p>
+            </span>
+        </div>
+
+        <!-- user problem -->
+        <div>
+            <h4>User Problem</h4>
+            <p>I categorizes users into villagers who participate in activities and health-carer who plan activities.
+                The average age of the villagers is 70+, and the past platform lacks "sorting" feature and the activity
+                information is fragmented. They are also not good at network. It leads to <b>bad user
+                    experience such as registration and searching difficulties.</b> However, the health-carer needs to
+                manage
+                and plan activities. <b>In the past, the whole data records on paper</b>, which made it
+                difficult to manage activities. Therefore, it's a burden to make health-carer analyze what new
+                activities should be
+                held or optimized difficultly.</p>
+        </div>
+
+        <!-- the goal -->
+        <div class="work-goal">
+            <h4>The Goal</h4>
+            <p>I’d like to create something that can solve user problem. It comes down to
+                the following three aspects:</p>
+
+            <ul>
+                <li><b>Unified:</b> Unify fragmented activity information across Health Village in familiar platform
+                </li>
+                <li><b>Accessible:</b> Users should be guided through their task goals</li>
+                <li><b>Data-based:</b> If users have more questions, they can reach out for the answer</li>
+            </ul>
+
+        </div>
+
+        <!-- design highlight -->
+        <div class="work-design-highlight">
+            <p class="txtBold txtLightGray">The 3 Design Highlights You Should Know</p>
+            <ul>
+                <li>
+                    <h4 class="txtBold">Personalized Recommendations Help Make Decisions</h4>
+                </li>
+                <li>
+                    <h4 class="txtBold">The Right Platform Uses More Smoothly</h4>
+                </li>
+                <li>
+                    <h4 class="txtBold">Online Activity History Makes The Next Activity Better</h4>
+                </li>
+            </ul>
+
+
+        </div>
+
+        <!-- Personalized Recommendations Help Make Decisions -->
+        <div>
+            <p class="txtBold txtLightGray">Design Highlight</p>
+            <h2>Personalized Recommendations Help Make Decisions</h2>
+            <p>Through empathize users, we understand that the seniors are not good at using the Internet, and it is
+                difficult for them to search. Therefore, we have designed Personalized Activity Recommendations and
+                analyzed the users' past activity records to provide the most suitable activities and interested
+                activities. It can meet the needs of users and meet the design goal, promote the activity participation
+                rate.</p>
+
+        </div>
+
+        <!-- personalized recommendations image -->
+        <div class="flex final-design-gif">
+            <img src="../assets/learning-platform-for-senior-citizens/final-design-registration.gif" alt="image">
+        </div>
+
+        <!-- personalizeed recommendations image2 -->
+        <div class="work-img-box">
+            <img src="../assets/learning-platform-for-senior-citizens/design-highlight1.svg" alt="image">
+            <p class="txtTags txtGray">Information list for basis of recommend</p>
+        </div>
+
+        <!-- The Right Platform Uses More Smoothly -->
+        <div>
+            <p class="txtBold txtLightGray">Design Highlight</p>
+            <h2>The Right Platform Uses More Smoothly</h2>
+            <p>We found that most platforms use web pages for basic functional
+                operations, we also found that they use the group function in the <b>LINE APP for message
+                    communication</b>, so I searched and found that: <a
+                    href="https://www.iii.org.tw/Press/NewsDtl.aspx?nsp_sqno=1917&fm_sqno=14" target="_blank"> 60%
+                    of the seniors(over 55) have a smartphone, and more than 90% of them use the LINE APP.</a> By
+                asking the staff of the health care village, we learned that more than 70% of the seniors in the
+                village have a smartphone, and nearly 100% of them use the LINE APP , and the villagers are more
+                familiar with mobile phones than the other seniors.</p>
+
+        </div>
+
+        <!-- The right platform image -->
+        <div>
+            <img src="../assets/learning-platform-for-senior-citizens/final-design-after.svg" alt="image">
+        </div>
+
+        <!-- Online Activity History Makes The Next Activity Better -->
+        <div>
+            <p class="txtBold txtLightGray">Design Highlight</p>
+            <h2>Online Activity History Makes The Next Activity Better</h2>
+            <p>In the past, paper were used to record activities, which often made it difficult to review. Therefore, we
+                created several functions and made them online through empathy users. These records can give health
+                carers more basis for planning activities.</p>
+
+        </div>
+
+        <!-- ONline history image -->
+        <div class="flex final-design-gif">
+            <span class="work-img-box">
+                <img src="../assets/learning-platform-for-senior-citizens/final-design-history.gif" alt="image">
+                <p class="txtGray txtTags">E-portfolio</p>
+            </span>
+            <span class="work-img-box">
+                <img src="../assets/learning-platform-for-senior-citizens/final-design-feedback.gif" alt="image">
+                <p class="txtGray txtTags">Feedback form</p>
+            </span>
+            <span class="work-img-box">
+                <img src="../assets/learning-platform-for-senior-citizens/final-design-signIn.gif" alt="image">
+                <p class="txtGray txtTags">Scan sign-in</p>
+            </span>
+        </div>
+
+
+
+        <!-- know more process -->
+        <div class="work-know-more-process flex">
+            <p>know more</p>
+            <span>↓</span>
+        </div>
+
+        <!-- Process title-->
+        <div class="work-process">
+            <span class="title">THE PROCESS</span>
+            <span class=" title transitional-text transEz-in-out">THE PROCESS</span>
+        </div>
+
+        <!-- user interview overview -->
+        <div>
+            <p class="txtBold txtLightGray">User Interview</p>
+            <h2>To Understand the Insight of Health Carer</h2>
+            <p>This is a whole-new project. We must understand the working mode of the health village, current
+                conditions, and internal administrative knowledge in order to plan effectively. Therefore, we decided to
+                conduct user interviews, and <b>the target is the staff of the activity department of the health
+                    village</b>,
+                so that we can collect a large of basic knowledge at the minimum cost.</p>
+
+        </div>
+
+        <!-- user interview the goal & keyquestions -->
+        <div>
+            <h4>Research Goal</h4>
+            <ul>
+                <li>Understanding current conditions and basic knowledge</li>
+                <li>To Understand users</li>
+            </ul>
+        </div>
+
+        <!-- key questions -->
+        <div>
+            <h4>Key Questions</h4>
+            <ol>
+                <li>Who use this platform?</li>
+                <li>What is the status of the staff at the activity?</li>
+                <li>What is the status of the villager at the activity?</li>
+                <li>What tasks will you do on this platform?</li>
+                <li>What time do you finish your tasks on this platform?</li>
+                <li>What's the problem with completing the task?</li>
+                <li>What features would you like to add or improve?</li>
+                <li>Please give a basic introduction to 'activities/courses'.</li>
+                <li>Are there any similar platforms that you think are good?</li>
+                <li>If so, what are the advantages and disadvantages?</li>
+            </ol>
+        </div>
+
+        <!-- image -->
+        <div class="flex">
+            <div class="work-img-box">
+                <img src="../assets/learning-platform-for-senior-citizens/user interview2.svg" alt="image"
+                    class="border-lightGray">
+                <p class="txtTags txtGray">something recorded</p>
+            </div>
+            <div class="work-img-box">
+                <img src="../assets/learning-platform-for-senior-citizens/user interview.svg" alt="image"
+                    class="border-lightGray">
+                <p class="txtTags txtGray">key questions</p>
+            </div>
+        </div>
+
+        <!-- fine-outs -->
+        <div>
+            <h4>Find-Outs</h4>
+            <ol>
+                <li><b>Hard-to-Find Info:</b> In most cases, paper records are used, such as: roll call, activity
+                    content, which often makes the information difficult to find and keep. Therefore, they often rely on
+                    rules of thumb to plan activities, and even help villagers to manually register for activities to
+                    add extra work pressure.</li>
+                <li><b>The Wrong Platform:</b> There are also some activities that use the online platform to register,
+                    but the most of villagers are not familiar with network, so they will ask staff to assist in
+                    registration. Some elders don’t even use the platform, so they call the counter directly and ask the
+                    staff to help them join the activity by using background. It makes the original convenience to
+                    become a burden instead.</li>
+                <li><b>No Place to Remind:</b> If there is a temporary difficulty in the activity to make the location
+                    or time should be changed, the news is announced on the official website. However, the villagers do
+                    not use the Internet frequently, there's something problems will happened, such as losing
+                    information and going to the wrong classroom.</li>
+
+            </ol>
+        </div>
+
+        <div class="border-lightGray"></div>
+
+        <!-- competitive analysis overview -->
+        <div>
+            <p class="txtBold txtLightGray">Competitive Analysis</p>
+            <h2>To Understand the Industry Standard</h2>
+            <p>We will collect the activity platform of the nursing home (the exact same competitor) and the general
+                silver-haired activity platform (secondary competitor) to compare <b>the features, UI hierarchy, and the
+                    platform used.</b> In addition to understanding the industry standard, it can also become nutrients
+                of new design.</p>
+
+
+        </div>
+
+        <!-- competitve analysis image -->
+        <div class="work-carousel">
+
+            <div id="carouselControl1" class="carousel slide" data-ride="carousel">
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img src="../assets/learning-platform-for-senior-citizens/Competitive analysis1.svg"
+                            class="d-block w-100" alt="image">
+
+                        <div class="carousel-txt">
+                            <p class="txtTags">Secondary Competitor</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="../assets/learning-platform-for-senior-citizens/Competitive analysis2.svg"
+                            class="d-block w-100" alt="image">
+
+                        <div class="carousel-txt">
+                            <p class="txtTags">Main Competitor</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="carousel-btn">
+                <span type="button" data-target="#carouselControl1" data-slide="prev">
+                    <span aria-hidden="true"><img src="../assets/chevron-left.png" alt="image"></span>
+                </span>
+
+                <span type="button" data-target="#carouselControl1" data-slide="next">
+                    <span aria-hidden="true"><img src="../assets/chevron-right.png" alt="image"></span>
+                </span>
+            </div>
+
+        </div>
+
+        <div class="border-lightGray"></div>
+
+        <!-- user journey map overview -->
+        <div>
+            <p class="txtBold txtLightGray">User Journey Map</p>
+            <h2>To Empathize with the Users</h2>
+            <p>According to the results of user interviews and team meetings, it was decided to make 3 types of
+                Personas. There are <b>2 main types</b>, which are divided into more opened villagers who often
+                participate in activities, and more introverted villagers who 'don't often participate in activities.
+                There is <b>1 secondary types</b>, which is the staff of the activity department. Then, Let's Start the
+                User Journey Map</p>
+
+
+        </div>
+
+        <!-- UJM's image -->
+        <div class="work-carousel">
+
+            <div id="carouselControl2" class="carousel slide" data-ride="carousel">
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img src="../assets/learning-platform-for-senior-citizens/cjm1-1.svg" class="d-block w-100"
+                            alt="image">
+
+                        <div class="carousel-txt">
+                            <p class="txtTags">【1】 Persona (Main)</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/learning-platform-for-senior-citizens/cjm1-2.svg" class="d-block w-100"
+                            alt="image">
+
+                        <div class="carousel-txt">
+                            <p class="txtTags">User Journey Map by 【1】 persona</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/learning-platform-for-senior-citizens/cjm2-1.svg" class="d-block w-100"
+                            alt="image">
+
+                        <div class="carousel-txt">
+                            <p class="txtTags">【2】 Persona (Main)</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/learning-platform-for-senior-citizens/cjm2-2.svg" class="d-block w-100"
+                            alt="image">
+
+                        <div class="carousel-txt">
+                            <p class="txtTags">User Journey Map by 【2】 persona</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/learning-platform-for-senior-citizens/cjm3-1.svg" class="d-block w-100"
+                            alt="image">
+
+                        <div class="carousel-txt">
+                            <p class="txtTags">【3】 Persona(Secondary)</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/learning-platform-for-senior-citizens/cjm3-2.svg" class="d-block w-100"
+                            alt="image">
+
+                        <div class="carousel-txt">
+                            <p class="txtTags">User Journey Map by 【3】 persona</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="carousel-btn">
+                <span type="button" data-target="#carouselControl2" data-slide="prev">
+                    <span aria-hidden="true"><img src="../assets/chevron-left.png" alt="image"></span>
+                </span>
+
+                <span type="button" data-target="#carouselControl2" data-slide="next">
+                    <span aria-hidden="true"><img src="../assets/chevron-right.png" alt="image"></span>
+                </span>
+            </div>
+
+        </div>
+
+        <!-- UJM's FIND-outs -->
+        <div>
+            <h4>Find-Outs</h4>
+            <ol>
+                <li><b>Users want all information in one place:</b> The activities of the health village are scattered
+                    on the course platform, official website, bulletin board and classroom door. When
+                    users are looking for new fun, they need a platform to integrate all the information.</li>
+                <div class="work-img-box">
+                    <img src="../assets/learning-platform-for-senior-citizens/cjm-findout-1.svg" alt="image">
+                    <p class="txtTags txtGray">Users don't like fragmented messages</p>
+                </div>
+                <li><b>Users want to use a familiar platform:</b> Seniors tend to use a familiar platform, so they don't
+                    need to pay extra time to learn new knowledge.</li>
+                <li><b>Users want a simple workflow:</b> The reason is the seniors are not used to typing, easily get
+                    lost in the journey, and are not good at the Internet.</li>
+                <li><b>Users want to be guided:</b> When they lost in the platform, hoping that there is something that
+                    can guide them how to achieve their goal, instead of asking others for help many times.</li>
+                <li><b>Users want to record activities:</b> Activity need to be recorded to avoid forgetting. For
+                    the villagers, they hope someone can remind them to participate in the activity; For the staff, they
+                    hope to record the activity process of the senior for analysis.</li>
+                <span class="work-img-box">
+                    <img src="../assets/learning-platform-for-senior-citizens/cjm-findout-2.svg" alt="image">
+                    <p class="txtTags txtGray">Users desire to record and be reminded</p>
+                </span>
+            </ol>
+        </div>
+
+        <!-- UJM's Vision -->
+        <div>
+            <h4>Vision</h4>
+            <p>With all of Find-outs above, we run a design sprint. After that, we pinned down the design goals in the
+                session:</p>
+            <ul>
+                <li><b>Unified:</b> Unify fragmented activity information across Health Village in familiar platform
+                </li>
+                <li><b>Accessible:</b> Users should be guided through their task goals</li>
+                <li><b>Data-based:</b> If users have more questions, they can reach out for the answer</li>
+            </ul>
+        </div>
+
+        <!-- Next Step -->
+        <div class="work-next-step">
+            <h4>Next Step</h4>
+            <ul>
+                <li>Prioritize Feature Development</li>
+                <li>Build Wireframes</li>
+            </ul>
+        </div>
+
+        <!-- know more design -->
+        <div class="work-know-more-process flex">
+            <p>know more</p>
+            <span>↓</span>
+        </div>
+
+        <!-- prioritize Development -->
+        <div>
+            <p class="txtBold txtLightGray">Priority</p>
+            <h2>Prioritize Feature Development</h2>
+            <p>After meeting with stakeholders in the early stage, we decided to use LINE and Website as the
+                development
+                platforms, so when I drawing the functional map, I have already considered the limitations of
+                LINE:
+            </p>
+        </div>
+
+        <!-- functional map -->
+        <div class="flex">
+            <!-- front-stage -->
+            <span class="work-img-box">
+                <a href="../assets/learning-platform-for-senior-citizens/FM-front.pdf" target="_blank"
+                    style="cursor: zoom-in;"><img src="../assets/learning-platform-for-senior-citizens/FM-front.svg"
+                        alt="image"></a>
+                <p class="txtTags txtGray">Front-stage Functional Map</p>
+            </span>
+            <!-- back-stage -->
+            <span class="work-img-box">
+                <a href="../assets/learning-platform-for-senior-citizens/FM-back.pdf" target="_blank"
+                    style="cursor: zoom-in;"><img src="../assets/learning-platform-for-senior-citizens/FM-back.svg"
+                        alt="image"></a>
+                <p class="txtTags txtGray">Back-stage Functional Map</p>
+            </span>
+        </div>
+
+        <!-- word.1 -->
+        <div>
+            <p>In order to save time and money, we will list the features and prioritize to know how degree that the <a
+                    href="https://www.ap-mic.com/" target="_blank">APMIC</a> (our development team) background can
+                achieve currently:</p>
+        </div>
+
+        <!-- list of priority -->
+        <div class="work-img-box">
+            <a href="../assets/learning-platform-for-senior-citizens/Priority1.svg" style="cursor: zoom-in;"
+                target="_blank"><img src="../assets/learning-platform-for-senior-citizens/Priority1.svg" alt="image"
+                    class="border-lightGray"></a>
+            <p class="txtTags txtGray">All functions and purpose what I list</p>
+        </div>
+
+        <!-- Wireframes -->
+        <div>
+            <p class="txtBold txtLightGray">Wireframes</p>
+            <h2>Initial Planning and Gathering Feedback</h2>
+            <p>I start from <a href="../assets/learning-platform-for-senior-citizens/IA.pdf" target="_blank">Information
+                    Architecture</a> to look at the big picture. After that, it's time to start planning how users will
+                use the platform:</p>
+        </div>
+
+        <!-- wireframes image -->
+        <div class="work-img-box">
+            <img src="../assets/learning-platform-for-senior-citizens/wireframe1.svg" alt="image">
+            <p class="txtTags txtGray">Linebot Wireframes</p>
+        </div>
+
+        <div class="work-img-box">
+            <img src="../assets/learning-platform-for-senior-citizens/wireframe2.svg" alt="image">
+            <img src="../assets/learning-platform-for-senior-citizens/wireframe3.svg" alt="image">
+            <p class="txtTags txtGray">Website Wireframes</p>
+        </div>
+
+        <!-- Difficult of Development -->
+        <div>
+            <h4 class="txtBold txtMainColor">Emergencies</h4>
+            <p class="txtMainColor">Due to some internal issues, after reading the first version of Wireframe,
+                stakeholders decided to overturn the previous development priorities.
+            </p>
+        </div>
+
+        <div>
+            <h4 class="txtMainColor">Next Step</h4>
+            <ul class="txtMainColor">
+                <li class="txtMainColor">Understand the insights of stakeholders</li>
+                <li class="txtMainColor">Review the research that conducted above and find the solution</li>
+                <li class="txtMainColor">Redesign according to the solution</li>
+            </ul>
+        </div>
+
+        <!-- know more design -->
+        <div class="work-know-more-process flex">
+            <p>know more</p>
+            <span>↓</span>
+        </div>
+
+        <!-- redesign, solution, lineOA-image -->
+        <div>
+            <p class="txtBold txtLightGray">Redesign</p>
+            <h2>Review, Reunderstand, Redesign</h2>
+            <p>After meeting with stakeholders, I learned the following 2 questions:</p>
+            <ul>
+                <li><b>Not Enough Time:</b> Too many projects running at the same time</li>
+                <li><b>Cannot be Integrated:</b> This project will eventually be integrated with other projects into a
+                    <span class="tip-box">
+                        LINE OA
+                        <span class="float-tip">
+                            <span>Line Official Account</span>
+                            <span class="txtTags">Can carry out brand marketing, functions with dialogue robots,
+                                designated
+                                group messages, CRM</span>
+                        </span>
+                    </span>, but now the operation process of the two is different.
+                </li>
+
+            </ul>
+
+            <!-- intergrated image -->
+            <img src="../assets/learning-platform-for-senior-citizens/redesign-questions.svg" alt="image">
+
+            <!-- Solution -->
+            <h4>Solution</h4>
+            <p>I reunderstand the resources at hand, <span class="tip-box">
+                    LINE OA
+                    <span class="float-tip">
+                        <span>Line Official Account</span>
+                        <span class="txtTags">Can carry out brand marketing, functions with dialogue robots, designated
+                            group messages, CRM</span>
+                    </span>
+                </span>,
+                and I conducted the competitor analysis again and discussed the results with the
+                engineering team. Final, I got a positive answer.</p>
+        </div>
+
+        <!-- solution2 image -->
+        <div>
+            <img src="../assets/learning-platform-for-senior-citizens/Competitive analysis3.svg" alt="image">
+        </div>
+
+        <!-- solution2 -->
+        <div>
+            <p>I reunderstanding the user needs, stakeholders' questions, and I re-planned the overall flow, Here's some
+                points:</p>
+            <ol>
+                <li><b>Integrate:</b> Move the functions of the webpage to <span class="tip-box">
+                        LINE OA
+                        <span class="float-tip">
+                            <span>Line Official Account</span>
+                            <span class="txtTags">Can carry out brand marketing, functions with dialogue robots,
+                                designated
+                                group messages, CRM</span>
+                        </span>
+                    </span></li>
+                <li><b>Chatbot instead:</b> We build dialogue scripts to guide the user's workflow to avoid limitations
+                    of LINE</li>
+            </ol>
+        </div>
+
+        <!-- flowchart image -->
+        <div class="work-img-box">
+            <h4>Before Flow</h4>
+            <img src="../assets/learning-platform-for-senior-citizens/redesign-solution-flow-before.svg" alt="image">
+        </div>
+
+        <div class="work-img-box">
+            <h4>New Flow</h4>
+            <img src="../assets/learning-platform-for-senior-citizens/redesign-solution-flow-final.svg" alt="image">
+        </div>
+
+
+        <!-- final design -->
+        <div>
+            <h4>FINAL DESIGN</h4>
+            <p>We designed the UI of the front-stage, and the main users are those villagers. Therefore, I have studied
+                the design specifications of the APP for the seniors, meeting with staff of health village to build
+                dialogue scripts, and following with the Find-Outs above, I have
+                come to the conclusions, Here's the following main points:</p>
+            <ul>
+                <li><b>Clear:</b> High contrast color, Big word, Big icon with name...</li>
+                <li><b>Bright & Energy:</b> High saturation color, friendly text...</li>
+                <li><b>Easy-to-Understand:</b> Intuitive text...</li>
+            </ul>
+        </div>
+
+        <!-- brandcolorImage -->
+        <div class="work-img-box">
+            <img src="../assets/learning-platform-for-senior-citizens/brandcolor.svg" alt="image">
+        </div>
+
+        <!-- final design 2 -->
+        <div>
+            <p>My first step is to set the brand color first, because it is an activity platform, I hope to have a sense
+                of vitality, and then refer to the above main points to complete the UI design specifications, and
+                finally we complete, Let's check it out!</p>
+        </div>
+
+        <!-- UI image -->
+        <div class="work-img-box">
+            <img src="../assets/learning-platform-for-senior-citizens/UI1.svg" alt="image">
+            <img src="../assets/learning-platform-for-senior-citizens/UI2.svg" alt="image">
+        </div>
+
+        <!-- iteration -->
+        <div>
+            <p class="txtBold txtLightGray">Iteration</p>
+            <h2>Later stage Evaluation & Next Optimization</h2>
+            <div>
+                <p>LINE still has limitations, and some functions cannot be used like
+                    web pages. In the next generation, we will add web page function development and redesign the
+                    journey of users. Because of time, I cant't participate in the next iteration, so I make a HAPPY
+                    BOOK to record the design journey, and Here's the book:
+                </p>
+            </div>
+
+            <!-- Happy book -->
+            <div>
+                <a href="https://issuu.com/arong15300/docs/final0607_compressed" target="_blank" class="txtBold">Pick to
+                    Read Happy Book!</a>
+            </div>
+
+        </div>
+
+        <!-- Takeaway -->
+        <span>
+            <h1>Takeaway</h2>
+        </span>
+
+        <div></div>
+
+        <!-- takeaway 1 -->
+        <div>
+            <h4>The first whole project</h4>
+            <p>Unlike designing a function of product, I need to understand the entire product journey, the health
+                village, the seniors, the stakeholders, and even myself. That is to say, it's my graduation project and
+                a business project at the same time. I have to make unique ideas on the premise of actual launch.
+                Therefore, it can't be avoid that interesting ideas will be threw. My goal is to find a balance between
+                uniqueness and consistency.
+            </p>
+        </div>
+
+        <!-- takeaway 2 -->
+        <div>
+            <h4>The challenges of designing at scale</h4>
+            <p>In the past, I completed school projects by myself or in cooperation with classmates that as a designer.
+                This time, I cooperated with a complete team. Unlike before, there are many constraints on cooperative
+                design, such as: the brand concept of the customer, the persistence of stakeholders, the engineering
+                team's limit. It takes a lot of time and effort to understand their requirements and reach alignment.
+                There were also emergencies in the development, the product was redesigned, and it was a thrilling but
+                perfect ending experience.
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- this is footer -->
+    <div class="footer flex">
+        <div class="flex">
+            <p>--- UX Designer ---</p>
+            <p class="txtTags txtLightGray">©Aaron Wong 2022</p>
+        </div>
+
+        <a href="https://www.linkedin.com/in/%E7%8E%8B%E4%BF%8A%E9%8E%94-aaron-b56132247/" target="_blank">Linkedin</a>
+    </div>
+
+</body>
+
+</html>

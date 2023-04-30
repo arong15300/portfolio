@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <!-- Rosario font style -->
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Rosario" />
+  <!-- my all css -->
+  <link rel="stylesheet" href="../assets/scss/all.css">
+  <!-- my all JS -->
+  <script type="text/javascript" src="../assets/js/all.js"></script>
+
+
+  <title>Aaron Wong</title>
+</head>
+
+
+
+<body>
+
+  <!-- this is BTNfixed -->
+  <div>
+    <!-- this is contactBTN -->
+    <a href="mailto:arong15300@gmail.com?body=Thanks For Your Reading" id="goMail" class="transEz-in-out">
+      <img class="mailClose" src="../assets/mail close.png" alt="email button">
+      <img class="mailOpen" src="../assets/mail open.png" alt="email button">
+      <p>聯絡我</p>
+    </a>
+
+    <!-- this is BtnGoTop -->
+    <span id="goTop" class="transEz-in-out" onclick="fnGoTop()"><img src="../assets/arrow-up.png"
+        alt="go top button"></span>
+  </div>
+
+
+  <div class="width-aboutMe">
+    <!-- this is header -->
+    <div class="header-aboutMe flex">
+
+      <nav id="nav" class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand logo" href="index.html">
+          aaronwong
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                語言 </a>
+              <div class="dropdown-menu">
+                <button class="dropdown-item" onclick="switchLanguage('zh-TW')">中文</button>
+                <button class="dropdown-item" onclick="switchLanguage('en')">English</button>
+              </div>
+            </li>
+            <li><a class="nav-link" href="work.html">作品</a></li>
+            <li><a class="nav-link" href="aboutMe.html">關於我</a></li>
+            <li><a class="nav-link" href="王俊鎔_履歷.pdf" target="_blank">簡歷</a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <div class="banner-aboutMe flex">
+
+        <span class="title">關於我</span>
+
+        <div class="ins-aboutMe flex">
+
+          <div>
+            <img style="height: 100%;" src="../assets/surfing.jpeg" alt="image">
+          </div>
+
+          <div>
+            <img style="height: 100%;" src="../assets/view.jpeg" alt="image">
+          </div>
+
+          <div>
+            <img src="../assets/aRock.jpg" alt="image">
+          </div>
+
+          <div>
+            <img src="../assets/husky.jpg" alt="image">
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+    <!-- this is content -->
+    <div class="aboutContainer">
+
+      <!--  -->
+      <div>
+        <h2 class="txtBold">早安 午安 晚安</h2>
+        <p>我是王俊鎔，一名 UX 設計師。你也可以叫我 Aaron。我主修工業設計，已經在設計領域學習超過 4 年。我喜歡挑戰自己的舒適區，正如經典名言所說的：“You'll never know.”。2019
+          年暑假，我在台灣小琉球島打工換宿 4
+          周。我認識了許多也在打工換宿的新朋友，看得越多，就會了解得越多。因為這次旅行，我發現自己喜歡與人們同樂。我是一個樂觀的人，喜歡認識各種不同的人，體驗各種新事物。現在，我仍然在不斷創造新的生活體驗，並嘗試將其應用於設計中，努力成為一個善解人意且喜歡嘗試新事物的人。
+        </p>
+
+      </div>
+
+      <!--  -->
+      <div>
+        <p>通過實習、線上課程以及參加線下活動，我已經培養了 UX 設計師的三個核心技能：</p>
+      </div>
+
+      <!--  -->
+      <div>
+        <ol style="font-size:1.5em;">
+          <li>
+            <h4>溝通：</h4>
+            <p>由於系所的課程安排，我需要不斷說服教授接受我的設計理念，聆聽教授或業界的建議並加以改進。我曾參加國家創新創業競賽，組織團隊設計產品和商業模式。在畢業專題中，我與 2 名設計師、3 名設計教授、2
+              名工程教授以及我們合作的客戶場地領域、工程團隊協調開發「樂齡活動學習平台」，並將實際落地於長庚養生文化村。</p>
+          </li>
+          <li>
+            <h4>領導：</h4>
+            <p>由於對公益和人文事務的興趣，我曾擔任區域校友會主席會長，帶領約 20 名積極成員在學校社團參與了 2 年。在我的任期內，我們的團隊為偏鄉小學籌備了 6 個月的關懷活動，受益學童約有 100
+              人。此外，我們還舉辦了 5 個全校性的活動，最終將社團成員人數提高了 10%。</p>
+          </li>
+          <li>
+            <h4>開放思維：</h4>
+            <p>
+              由於對探索新事物的熱情，通過各種兼職工作經驗，瞭解了服務行業的各種顧客，並從兒童活動攝影中理解了「美」的概念，我也毅然獨自前往了台灣小琉球島。在那裡進行一個月的打工換宿、學習房務和自由潛水，深入了解了當地獨特的文化。接觸了許多人，認識了不同的人，也更能夠接受不同的聲音和建議。
+            </p>
+          </li>
+        </ol>
+      </div>
+
+      <!-- linkedin resume -->
+      <div class="moreAbout flex">
+        <a href="王俊鎔_履歷.pdf" target="_blank" class="txtBold">我的簡歷</a>
+        <div></div>
+        <a href="https://www.linkedin.com/in/%E7%8E%8B%E4%BF%8A%E9%8E%94-aaron-b56132247/" target="_blank"
+          class="txtBold">Linkedin</a>
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <!-- this is footer -->
+  <div class="footer flex">
+    <div class="flex">
+      <p>--- UX Designer ---</p>
+      <p class="txtTags">©Aaron Wong 2022</p>
+    </div>
+
+    <a href="https://www.linkedin.com/in/%E7%8E%8B%E4%BF%8A%E9%8E%94-aaron-b56132247/" target="_blank">Linkedin</a>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+.aboutContainer {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+
+    div {
+        margin-bottom: 64px;
+        width: 100%;
+    }
+
+    h4,
+    h2 {
+        margin-bottom: 8px;
+    }
+
+    ul {
+        list-style: circle;
+        margin-left: 32px;
+        margin-top: 16px;
+    }
+
+    ol {
+        list-style: decimal;
+        margin-top: 16px;
+
+        li {
+            margin-left: 32px;
+            margin-top: 16px;
+        }
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+}
+
+.width-aboutMe {
+    width: 60%;
+}
+
+.header-aboutMe {
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-aboutMe {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+
+    span {
+        margin-bottom: 10vh;
+    }
+}
+
+.ins-aboutMe {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+
+    div {
+        width: 24%;
+        height: 14.4vw;
+        border-radius: 4%;
+        overflow: hidden;
+        position: relative;
+
+        animation-name: pic-About;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+
+        @keyframes pic-About {
+            0% {
+                transform: rotateY(0deg);
+            }
+
+            10% {
+                transform: rotateY(180deg);
+            }
+
+            50% {
+                transform: rotateY(180deg);
+            }
+
+            60% {
+                transform: rotateY(0deg);
+            }
+
+            100% {
+                transform: rotateY(0deg);
+            }
+        }
+    }
+}
+
+
+.moreAbout {
+    margin-top: 10vh;
+
+    div {
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 1.5px;
+        height: inherit;
+        background-color: $mainColor;
+    }
+
+    a {
+        color: $mainColor;
+    }
+
+    a:hover {
+        transform: scale(1.05);
+    }
+}
+
+@media(max-width:768px) {
+
+    .width-aboutMe {
+        width: 80%;
+    }
+
+    //this is aboutMe---------
+    .ins-aboutMe {
+        div {
+            width: 49.5%;
+            height: 25vw;
+            margin-bottom: 1%;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
