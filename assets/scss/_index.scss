@@ -153,6 +153,23 @@
     border: none;
 }
 
+.dropdown-item{
+    color: $gray;
+}
+
+.dropdown-item:hover{
+    color: $mainColor;
+    background-color: transparent;
+}
+
+.navbar-light .navbar-nav .nav-link:focus{
+    color: $gray;
+}
+
+.navbar-light .navbar-nav .nav-link:focus:hover{
+    color: $mainColor;
+}
+
 
 //this is my work
 .myWork {

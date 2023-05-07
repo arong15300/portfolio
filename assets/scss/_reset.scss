@@ -143,6 +143,14 @@ table {
 
 /* my css reset */
 
+button{
+    background-color: transparent;
+    border: none;
+}
+button:hover{
+    color: $mainColor;
+}
+
 img {
     height: auto;
     max-width: 100%;

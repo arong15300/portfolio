@@ -139,6 +139,15 @@ table {
 }
 
 /* my css reset */
+button {
+  background-color: transparent;
+  border: none;
+}
+
+button:hover {
+  color: rgb(100, 149, 237);
+}
+
 img {
   height: auto;
   max-width: 100%;
@@ -229,7 +238,7 @@ nav {
 }
 
 .txtGray {
-  color: #7c7c7c;
+  color: rgba(0, 0, 0, 0.5019607843);
 }
 
 .txtMainColor {
@@ -416,6 +425,23 @@ nav {
   border: none;
 }
 
+.dropdown-item {
+  color: rgba(0, 0, 0, 0.5019607843);
+}
+
+.dropdown-item:hover {
+  color: rgb(100, 149, 237);
+  background-color: transparent;
+}
+
+.navbar-light .navbar-nav .nav-link:focus {
+  color: rgba(0, 0, 0, 0.5019607843);
+}
+
+.navbar-light .navbar-nav .nav-link:focus:hover {
+  color: rgb(100, 149, 237);
+}
+
 .myWork {
   width: 100%;
   padding: 10%;
@@ -476,7 +502,7 @@ nav {
   margin-bottom: 128px;
 }
 .viewAllWorks a {
-  color: #7c7c7c;
+  color: rgba(0, 0, 0, 0.5019607843);
 }
 .viewAllWorks a:hover {
   color: rgb(100, 149, 237);
@@ -494,13 +520,13 @@ nav {
   margin-bottom: 20vh;
 }
 .aboutMe .title {
-  -webkit-text-stroke: 0.85px #7c7c7c;
+  -webkit-text-stroke: 0.85px rgba(0, 0, 0, 0.5019607843);
 }
 .aboutMe h2 {
   margin-bottom: 2vh;
 }
 .aboutMe a {
-  color: #7c7c7c;
+  color: rgba(0, 0, 0, 0.5019607843);
 }
 .aboutMe a:hover {
   font-weight: bold;
@@ -555,7 +581,7 @@ nav {
   text-align: center;
   width: -moz-fit-content;
   width: fit-content;
-  color: #7c7c7c;
+  color: rgba(0, 0, 0, 0.5019607843);
 }
 .footer a:hover {
   font-weight: bold;
@@ -844,7 +870,7 @@ nav {
 }
 .work-header p {
   margin-bottom: 64px;
-  color: #7c7c7c;
+  color: rgba(0, 0, 0, 0.5019607843);
 }
 
 .work-role {
@@ -869,7 +895,7 @@ nav {
 .work-know-more-process {
   cursor: default;
   margin-bottom: 192px !important;
-  color: #7c7c7c;
+  color: rgba(0, 0, 0, 0.5019607843);
   flex-direction: column;
   align-items: center;
   animation-name: upAndDown;
