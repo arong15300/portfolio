@@ -15,12 +15,12 @@
     width: 100%;
     padding: 10%;
     flex-wrap: wrap;
-    justify-content: space-between;
+    column-gap: 2%;
 }
 
 .card {
-    width: 32.6%;
-    margin-bottom: 1%;
+    width: 32%;
+    margin-bottom: 2%;
 }
 
 .imgBox {

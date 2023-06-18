@@ -61,3 +61,5 @@ function switchLanguage(lang) {
   // 重定向到新 URL
   window.location.href = newUrl;
 }
+
+
